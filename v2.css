@@ -1,0 +1,46 @@
+body {
+  background-color: cadetblue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Magic {
+  height: 400px;
+  width: 400px;
+  background-color: black;
+  color: antiquewhite;
+  font-weight: 600;
+  text-align: center;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  text-shadow: 0px 0px 10px cyan, 0px 0px 20px cyan, 0px 0px 40px cyan,
+    0px 0px 80px cyan;
+}
+.Magic-Box {
+  position: absolute;
+}
+.Magic-Circle {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+.Magic:hover {
+  border-radius: 50%;
+  transition: all 0.5s linear;
+  transform: rotate(360deg);
+
+}
+.Magic:hover .Magic-Circle {
+  visibility: visible;
+  opacity: 1;
+  text-shadow: 0px 0px 10px orangered, 0px 0px 20px orangered, 0px 0px 40px orangered,
+  0px 0px 80px orangered;
+}
+.Magic:hover .Magic-Box {
+  visibility: hidden;
+  opacity: 0;
+}
